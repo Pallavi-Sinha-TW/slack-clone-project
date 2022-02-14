@@ -1,0 +1,10 @@
+fileignoreconfig:
+- filename: css/all.css
+  checksum: 95ec69e7b812820545f5b5caedbd4b9208508cffa275670364f91bf72f32a25a
+- filename: webfonts/fa-regular-400.svg
+  checksum: aab76be656ab7847bba4ebe8effcd34574d8c3a81d9d5bc913b4fe516de765ff
+- filename: webfonts/fa-brands-400.svg
+  checksum: 9ab2218c9191f665dc15c5d3c71d24d3700903ff28a292c95f4d5a06a08cad79
+- filename: webfonts/fa-solid-900.svg
+  checksum: 39560867c7842eb5b8d2b80f8e45ec7958c26d132d0ee519fdd751f09353f851
+version: ""

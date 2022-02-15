@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Slack Design</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+
+          <div class="icons">
+            <a href="#"><i class="far fa-clock"></i></a>
+          </div>
+
+          <form action="." class="search-bar">
+            <i class="fas fa-search"></i>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search Slack"
+              class="search-bar-input"
+            />
+          </form>
+
+          <div class="move-left">
+            <a href="#"><i class="far fa-question-circle"></i></a>
+          </div>
+
+          
+          <div class="feed">
+              <a href="#"><img src="images/user2.jpg" alt="User 2" /></a>
+          </div>
+        
+        </nav>
+      </header>
+      <main class="main">
+        <section class="sidebar">
+          <article class="sidebar-1">
+            <section class="sidebar-user">
+              <div class="sidebar-user-info">
+                <h4>Connect Chat (e)</h4>
+              </div>
+              <p class="sidebar-user-info-additional">
+                <i class="fas fa-circle"></i>Pallavi Sinha
+              </p>
+              <span class="user-edit-icon"><i class="fas fa-edit"></i></span>
+            </section>
+            <section class="unread">
+              <ul>
+                <li>
+                  <a href="#"><i class="far fa-comment-dots"></i>Threads</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-at"></i>Mentions & reactions</a>
+                </li>
+                <li class = "showMore">
+                  <a href="#"><i class="fas fa-ellipsis-v"></i>Show more</a>
+                </li>
+              </ul>
+            </section>
+            <section class="channels">
+              <h4 class="channels-header">
+                <i class="fas fa-sort-down" id = "channelCaret" onclick="viewChannels()"></i>
+                <div class = channeldropdown>
+                  <button class = dropbtn onclick= "viewChannels()">Channels</button>
+                </div>
+              </h4>
+              
+              <ul id = "channelNames">
+                <li>
+                  <a href="#"><i class="fas fa-hashtag"></i>random</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-hashtag"></i>general</a>
+                </li>
+              </ul>
+            
+            </section>
+            <section class="direct-messages">
+              <h4 class="direct-messages-header">
+                <i class="fas fa-sort-down" id = "usersCaret" onclick="viewUsers()"></i>
+                <button class = dropbtn onclick= "viewUsers()">Direct Messages</button>
+              </h4>
+              <ul id = "users">
+                <li>
+                  <a href="#"><i class="fas fa-circle online"></i>Preety</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="make-white"
+                      ><i class="fas fa-circle offline"></i>
+                    </span>Isabel</a>
+                </li>
+              </ul>
+            </section>
+          </article> 
+        </section>
+
+        <section class = "randomSpace">
+            <div class = "randomSpace1">
+              <div class = "channelTitle">
+                <h1><i class = "fas fa-hashtag"></i>&nbsprandom</h1>
+              </div>
+              <div class = "bookmark">
+                <i class="fa fa-plus"></i>&nbspAdd a bookmark
+              </div>
+              <div class = "channelDescription">
+                <p class = "introduction">
+                  <i class = "far fa-smile"></i>
+                  You've found the <a href = "#"># random</a> channel.
+                </p>
+                <p class = "randomDescription">
+                  This channel is for... well, everything else. It's a place for team jokes, spur-of-the-moment ideas, and funny GIFs. Go wild! <a href = "#">Edit Description</a>
+                </p>
+              </div>
+            </div>
+            <div class = "randomSpace2">
+              <div class = "messageBox">
+                <img class = "userImage" src = "images/35822 - Pallavi Sinha.jpg" alt = "Pallavi Sinha" height="50px" width = "50px">&nbspPallavi Sinha 3:52 PM
+                <p>joined #random along with 5 others</p>
+              </div>
+              <div class = "messageInput">
+                <input type = "text" placeholder="Send a message to #random">
+              </div>
+            </div>
+
+            
+        </section>
+      </main>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>

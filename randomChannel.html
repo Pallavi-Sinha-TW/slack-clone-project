@@ -7,6 +7,7 @@
     <title>Slack Design</title>
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -106,28 +107,33 @@
         <section class = "randomSpace">
             <div class = "randomSpace1">
               <div class = "channelTitle">
-                <h1><i class = "fas fa-hashtag"></i>&nbsprandom</h1>
+                <h3><i class = "fas fa-hashtag"></i>&nbsprandom</h3>
               </div>
               <div class = "bookmark">
-                <i class="fa fa-plus"></i>&nbspAdd a bookmark
+                <div class="bookmarkContent"><i class="fa fa-plus"></i>&nbspAdd a bookmark</div>                
               </div>
               <div class = "channelDescription">
                 <p class = "introduction">
                   <i class = "far fa-smile"></i>
-                  You've found the <a href = "#"># random</a> channel.
-                </p>
-                <p class = "randomDescription">
-                  This channel is for... well, everything else. It's a place for team jokes, spur-of-the-moment ideas, and funny GIFs. Go wild! <a href = "#">Edit Description</a>
+                  <span class = "channelIntro"><b id = "foundRandom">You've found the <a href = "#"># random</a> channel.</b>
+                    <br>This channel is for... well, everything else. It's a place for team jokes, spur-of-the-moment ideas, 
+                    and funny GIFs. Go wild! <a href = "#">Edit Description</a>
+                  </span>
+                  <h2><span class = "date">December 6th, 2021</span></h2>
                 </p>
               </div>
             </div>
             <div class = "randomSpace2">
               <div class = "messageBox">
-                <img class = "userImage" src = "images/35822 - Pallavi Sinha.jpg" alt = "Pallavi Sinha" height="50px" width = "50px">&nbspPallavi Sinha 3:52 PM
-                <p>joined #random along with 5 others</p>
+                <img class = "userImage" src = "images/35822 - Pallavi Sinha.jpg" alt = "Pallavi Sinha">
+                <span class = "channelStart">
+                  <b id = "userName">&nbspPallavi Sinha</b> 3:52 PM 
+                  <br> &nbspjoined #random along with 5 others
+                </span>
               </div>
               <div class = "messageInput">
-                <input type = "text" placeholder="Send a message to #random">
+                <input class = "inputBox"type = "text" placeholder="   Send a message to #random">
+                <i class =" fa fa-send"></i>
               </div>
             </div>
 

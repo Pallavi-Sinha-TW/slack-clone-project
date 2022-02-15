@@ -36,7 +36,7 @@ function viewChannels() {
     const newChannelName = document.getElementById("userInput").value;
     
     link.href = "#";
-    link.innerHTML = '&nbsp;' + '&nbsp;' + '&nbsp;' + newChannelName;
+    link.innerHTML = '&nbsp;' + '&nbsp;' + '&nbsp;' + '&nbsp' + newChannelName;
     link.className = "fas fa-hashtag";
     listItem.appendChild(link);
 

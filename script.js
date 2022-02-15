@@ -44,5 +44,14 @@ function viewChannels() {
 
     channelList.appendChild(listItem);
 
+
+    window.location.href = "newChannel.html";
+    
+    const name = document.getElementById("name");
+    name.innerHTML = newChannelName;
+
+
+
+
   }
   

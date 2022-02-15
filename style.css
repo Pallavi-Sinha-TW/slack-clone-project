@@ -597,5 +597,19 @@ html {
     font-size:medium;
  }
 
+ /*general space*/
+
+ .generalIntroduction{
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+ }
+
+ .generalIntroduction i{
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-right: 0.9rem;
+ }
+
 
 
